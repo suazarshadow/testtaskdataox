@@ -15,7 +15,7 @@ DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT")
 DB_NAME = os.getenv("DB_NAME")
 
-DB_URL = f"postgresql+psycopg2://scraper_agent:D7Apd9MCSf3C@localhost:5432/carstest"
+DB_URL = f"postgresql+psycopg2://scraper_agent:D7Apd9MCSf3C@db:5432/carstest"
 
 
 Base = declarative_base()

@@ -1,0 +1,49 @@
+Font directories:
+	/usr/share/fonts
+	/usr/local/share/fonts
+	/usr/share/fonts/X11
+	/usr/share/fonts/opentype
+	/usr/share/fonts/truetype
+	/usr/share/fonts/X11/Type1
+	/usr/share/fonts/X11/encodings
+	/usr/share/fonts/X11/util
+	/usr/share/fonts/opentype/ipafont-gothic
+	/usr/share/fonts/opentype/tlwg
+	/usr/share/fonts/opentype/unifont
+	/usr/share/fonts/truetype/freefont
+	/usr/share/fonts/truetype/liberation
+	/usr/share/fonts/truetype/noto
+	/usr/share/fonts/truetype/wqy
+	/usr/share/fonts/X11/encodings/large
+/usr/share/fonts: caching, new cache contents: 0 fonts, 3 dirs
+/usr/share/fonts/X11: caching, new cache contents: 0 fonts, 3 dirs
+/usr/share/fonts/X11/Type1: caching, new cache contents: 8 fonts, 0 dirs
+/usr/share/fonts/X11/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/X11/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/util: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 3 dirs
+/usr/share/fonts/opentype/ipafont-gothic: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/opentype/tlwg: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/opentype/unifont: caching, new cache contents: 7 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 1 fonts, 4 dirs
+/usr/share/fonts/truetype/freefont: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/liberation: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/noto: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/wqy: caching, new cache contents: 3 fonts, 0 dirs
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11: skipping, looped directory detected
+/usr/share/fonts/opentype: skipping, looped directory detected
+/usr/share/fonts/truetype: skipping, looped directory detected
+/usr/share/fonts/X11/Type1: skipping, looped directory detected
+/usr/share/fonts/X11/encodings: skipping, looped directory detected
+/usr/share/fonts/X11/util: skipping, looped directory detected
+/usr/share/fonts/opentype/ipafont-gothic: skipping, looped directory detected
+/usr/share/fonts/opentype/tlwg: skipping, looped directory detected
+/usr/share/fonts/opentype/unifont: skipping, looped directory detected
+/usr/share/fonts/truetype/freefont: skipping, looped directory detected
+/usr/share/fonts/truetype/liberation: skipping, looped directory detected
+/usr/share/fonts/truetype/noto: skipping, looped directory detected
+/usr/share/fonts/truetype/wqy: skipping, looped directory detected
+/usr/share/fonts/X11/encodings/large: skipping, looped directory detected
+/var/cache/fontconfig: cleaning cache directory
+fc-cache: succeeded

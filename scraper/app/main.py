@@ -45,14 +45,14 @@ def main():
     #numberOfPages = scraper.get_umber_of_pages(url=START_URL)
     state = read_state()
     number_of_pages = 1
-    number_of_start_page = 1
+    number_of_start_page = 0
     current_page = 0
     next_url = START_URL
 
     try: 
-        workers.worker(orm, parser, scraper, number_of_start_page, number_of_pages)
-        
-    
+
+        workers.worker(orm, parser, scraper, number_of_start_page, number_of_pages, START_URL)
+
     except Exception as e:
         write_state(
             last_page=current_page,

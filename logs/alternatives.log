@@ -1,0 +1,12 @@
+update-alternatives 2026-02-23 15:58:25: run with --install /usr/lib/x86_64-linux-gnu/libblas.so.3 libblas.so.3-x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 10
+update-alternatives 2026-02-23 15:58:25: link group libblas.so.3-x86_64-linux-gnu updated to point to /usr/lib/x86_64-linux-gnu/blas/libblas.so.3
+update-alternatives 2026-02-23 15:58:25: run with --install /usr/share/fonts/truetype/fonts-japanese-gothic.ttf fonts-japanese-gothic.ttf /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf 100
+update-alternatives 2026-02-23 15:58:25: link group fonts-japanese-gothic.ttf updated to point to /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf
+update-alternatives 2026-02-23 15:58:26: run with --force --install /usr/share/sounds/sf2/default-GM.sf2 default-GM.sf2 /usr/share/sounds/sf2/TimGM6mb.sf2 20
+update-alternatives 2026-02-23 15:58:26: link group default-GM.sf2 updated to point to /usr/share/sounds/sf2/TimGM6mb.sf2
+update-alternatives 2026-02-23 15:58:26: run with --force --install /usr/share/sounds/sf3/default-GM.sf3 default-GM.sf3 /usr/share/sounds/sf2/TimGM6mb.sf2 20
+update-alternatives 2026-02-23 15:58:26: link group default-GM.sf3 updated to point to /usr/share/sounds/sf2/TimGM6mb.sf2
+update-alternatives 2026-02-23 15:58:27: run with --install /usr/lib/x86_64-linux-gnu/liblapack.so.3 liblapack.so.3-x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3 10
+update-alternatives 2026-02-23 15:58:27: link group liblapack.so.3-x86_64-linux-gnu updated to point to /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3
+update-alternatives 2026-02-23 15:58:33: run with --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/Adwaita/cursor.theme 90
+update-alternatives 2026-02-23 15:58:33: link group x-cursor-theme updated to point to /usr/share/icons/Adwaita/cursor.theme

@@ -18,18 +18,21 @@ celery_app.conf.update(
 
 
 @celery_app.task(bind=True, max_retries=3, default_retry_delay=60)
-def worker(self, orm: ORM, parser: Parser, scraper: Scraper, number_of_start_page:int, number_of_pages:int):
+def worker(self, orm: ORM, parser: Parser, scraper: Scraper, number_of_start_page:int, number_of_pages:int, next_url:str):
     try:
-        asyncio.run(process_loop(orm, parser, scraper, number_of_start_page, number_of_pages))
+    
+        asyncio.run(process_loop(orm, parser, scraper, number_of_start_page, number_of_pages, next_url))
+  
     except Exception as exc:
         raise self.retry(exc=exc)
 
 
-async def process_loop(orm: ORM, parser: Parser, scraper: Scraper, number_of_start_page:int, number_of_pages:int):
+async def process_loop(orm: ORM, parser: Parser, scraper: Scraper, number_of_start_page:int, number_of_pages:int, next_url:str):
     batch_size = 50
+    current_page = 0 
     for i in range(number_of_start_page, number_of_pages):
+            
             html = await scraper.fetch_page(next_url)
-            print(html)
             urls = parser.parse_listing_page(html)
 
             for url in urls:
@@ -37,6 +40,7 @@ async def process_loop(orm: ORM, parser: Parser, scraper: Scraper, number_of_sta
 
             next_url = 'https://auto.ria.com/uk/search/?search_type=2&category=1&abroad=0&customs_cleared=1&page={i}&limit=100'
             current_page += 1
+
     while True:
         pending_listings = orm.get_pending_listings(batch_size=batch_size)
         if not pending_listings:
